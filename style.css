@@ -1,0 +1,118 @@
+.home-image {
+    max-width: 600px; /* Maximum width ko set karta hai */
+    width: 100%; /* Responsive behavior ke liye */
+    height: auto; /* Aspect ratio maintain karta hai */
+    display: block;
+    margin: 0 auto;
+}
+/* Styling for Header */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333; /* Navbar background color */
+    color: white; /* Text color for logo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for navbar */
+}
+
+/* Styling for Logo */
+/* Styling for Logo */
+.logo {
+    font-size: 28px; /* Font size ko bada kiya */
+    font-weight: bold; /* Bold text */
+    color: #4CAF50; /* Logo ka color */
+    font-family: 'Arial', sans-serif;
+    text-transform: uppercase; /* Uppercase mein display hoga */
+    letter-spacing: 1px; /* Space between letters for a cleaner look */
+}
+
+
+/* Styling for Navbar */
+.navbar a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: white; /* Link color */
+    font-size: 16px;
+    font-family: 'Arial', sans-serif;
+    padding: 8px 12px;
+    transition: color 0.3s, background-color 0.3s;
+}
+
+/* Hover effect for Navbar Links */
+.navbar a:hover {
+    color: #4CAF50; /* Hover color */
+    background-color: rgba(255, 255, 255, 0.1); /* Background on hover */
+    border-radius: 5px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+    }
+    .navbar {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar a {
+        margin: 5px 0;
+    }
+}
+.navbar a {
+    color: white !important;
+}
+footer {
+    background-color: #333; /* Footer background color, same as navbar */
+    color: white; /* Text color */
+    padding: 20px;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2); /* Optional shadow for footer */
+}
+
+footer p {
+    margin: 0;
+    font-size: 14px;
+    color: #4CAF50; /* Footer text color similar to logo */
+}
+
+footer a {
+    color: #4CAF50; /* Link color if you add links in the footer */
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+footer a:hover {
+    color: white; /* Hover effect for footer links */
+}
+/* Languages Section Styling */
+.languages-section {
+    margin-top: 20px;
+}
+
+.languages-section h2 {
+    margin-bottom: 10px; /* Space between title and list */
+}
+
+.languages-section ul {
+    list-style-type: none; /* Remove default bullets */
+    padding: 0; /* Remove default padding */
+}
+
+.languages-section li {
+    background-color: #4CAF50; /* Background color for each language */
+    color: white; /* Text color */
+    padding: 8px 12px;
+    margin: 5px 0; /* Space between each item */
+    border-radius: 5px; /* Rounded corners */
+}
+.about-home-image {
+    width: 80%; /* Responsive image - aap yahan percentage ya pixel value set kar sakte hain */
+    max-width: 400px; /* Maximum width ko set karein */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 8px; /* Optional rounded corners */
+}
+
+

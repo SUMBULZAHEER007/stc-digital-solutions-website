@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - STC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">STC</div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="portfolio-content">
+            <h1>Our Portfolio</h1>
+            <p>Explore our projects and see how we have helped our clients achieve their goals.</p>
+            
+            <div class="portfolio-items">
+                <div class="portfolio-item">
+                    <img src="images/portfolio.avif" alt="E-Commerce Website" class="portfolio-image">
+                    <h3>E-Commerce Website Development</h3>
+                    <p>An online store solution that offers user-friendly navigation and secure payment options.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio.Responsive Web App.avif" alt="Responsive Web App" class="portfolio-image">
+                    <h3>Responsive Web Application</h3>
+                    <p>A mobile-friendly web application built with React to enhance user experience.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio.Personal Blog Platform.webp" alt="Personal Blog" class="portfolio-image">
+                    <h3>Personal Blog Platform</h3>
+                    <p>A customizable blog platform allowing users to share their thoughts and experiences.</p>
+                </div>
+                <div class="portfolio-item">
+                    <img src="images/portfolio.Portfolio Website.avif" alt="Portfolio Website" class="portfolio-image">
+                    <h3>Portfolio Website</h3>
+                    <p>A personal portfolio showcasing projects, skills, and experiences in a visually appealing layout.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2019. All rights reserved.</p>
+    </footer>
+
+    <style>
+        /* Portfolio Styles */
+        .portfolio-content {
+            padding: 20px;
+        }
+
+        .portfolio-items {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .portfolio-item {
+            flex: 1 1 calc(25% - 20px); /* 4 items in a row */
+            margin: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            overflow: hidden;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .portfolio-image {
+            width: 100%; /* Responsive */
+            height: 150px; /* Fixed height */
+            object-fit: cover; /* Maintain aspect ratio */
+        }
+
+        .portfolio-item h3 {
+            margin: 10px 0;
+        }
+
+        .portfolio-item p {
+            padding: 0 10px 10px 10px;
+            font-size: 14px;
+        }
+    </style>
+
+</body>
+</html>
+

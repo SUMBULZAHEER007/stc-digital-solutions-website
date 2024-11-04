@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - STC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">STC</div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about-content">
+            <h1>About Us</h1>
+            <p>Welcome to the STC About page. Here, you will learn more about our journey and vision.</p>
+
+            <!-- About Layout with Image and Profile Section -->
+            <div class="about-layout">
+                <div class="about-image">
+                    <img src="images/about.jpg" alt="Digital Solutions Image" class="about-home-image">
+                </div>
+
+                <div class="profile-section">
+                    <h2>Upload Your Profile Image</h2>
+                    <div class="image-upload">
+                        <label for="profileImageInput" class="upload-label">
+                            <img id="profileImage" src="images/profile-placeholder.png" alt="Profile Image" class="profile-image">
+                            <span>Click to upload your image</span>
+                        </label>
+                        <input type="file" id="profileImageInput" accept="image/*" style="display: none;">
+                    </div>
+                    <p>This is a brief description about the team or individual.</p>
+                </div>
+            </div>
+
+            <!-- YouTube Video Frame -->
+            <div class="youtube-frame">
+                <h2>Watch Our Introduction</h2>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" 
+                title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+
+            <!-- Languages Section -->
+            <div class="languages-section">
+                <h3>Programming Languages:</h3>
+                <ul>
+                    <li>JavaScript</li>
+                    <li>Typescript</li>
+                    <li>HTML</li>
+                    <li>css</li>
+                    <li>Next.js</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2019. All rights reserved.</p>
+    </footer>
+
+    <script>
+        const profileImageInput = document.getElementById('profileImageInput');
+        const profileImage = document.getElementById('profileImage');
+
+        profileImageInput.addEventListener('change', function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    profileImage.src = e.target.result; // Set image source to uploaded file
+                }
+                reader.readAsDataURL(file); // Convert image file to base64 string
+            }
+        });
+    </script>
+
+    <style>
+        /* Style for About Layout */
+        .about-layout {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin: 20px 0;
+        }
+
+        .about-image {
+            flex: 1;
+            margin-right: 20px; /* Space between image and profile section */
+        }
+
+        .about-home-image {
+            width: 100%; /* Responsive image */
+            height: auto; /* Maintain aspect ratio */
+            border-radius: 8px; /* Optional rounded corners */
+        }
+
+        /* Style for image upload section */
+        .image-upload {
+            position: relative;
+            width: 150px; /* Adjust as needed */
+            height: 150px; /* Adjust as needed */
+            border: 2px dashed #4CAF50; /* Dashed border */
+            border-radius: 8px;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+            margin-bottom: 20px;
+        }
+
+        .upload-label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #4CAF50; /* Text color */
+        }
+
+        .profile-image {
+            width: 100%; /* Responsive */
+            height: 100%; /* Responsive */
+            object-fit: cover; /* Maintain aspect ratio */
+            display: block;
+        }
+    </style>
+
+</body>
+</html>

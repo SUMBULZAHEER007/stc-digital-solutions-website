@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <div class="logo">STC</div>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-content">
+            <h1>Contact Us</h1>
+            <form action="/submit-review" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required><br><br>
+
+                <label for="review">Your Review:</label><br>
+                <textarea id="review" name="review" rows="4" cols="50" required></textarea><br><br>
+
+                <label for="referral">How did you hear about us?</label>
+                <select id="referral" name="referral">
+                    <option value="google">Google</option>
+                    <option value="social_media">Social Media</option>
+                    <option value="friend">Friend</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+
+                <label>Would you visit again?</label><br>
+                <input type="radio" id="yes" name="visit_again" value="Yes">
+                <label for="yes">Yes</label><br>
+                <input type="radio" id="no" name="visit_again" value="No">
+                <label for="no">No</label><br>
+                <input type="radio" id="maybe" name="visit_again" value="Maybe">
+                <label for="maybe">Maybe</label><br><br>
+
+                <label for="comments">Comments:</label><br>
+                <textarea id="comments" name="comments" rows="3" cols="50"></textarea><br><br>
+
+                <input type="checkbox" id="email_updates" name="email_updates">
+                <label for="email_updates">Sign me up for email updates</label><br><br>
+
+                <input type="submit" value="Submit Review">
+            </form>
+            <img src="images/contact.jpg" alt="Digital Solutions Image" class="home-image">
+            <!-- Map Section -->
+            <div class="map-container">
+                <h2>Our Location</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434507522!2d144.95373531531625!3d-37.81720997975191!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f123456%3A0x1234567890abcdef!2sYour%20Location!5e0!3m2!1sen!2sus!4v1632998652148!5m2!1sen!2sus"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Copyright © 2019. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
